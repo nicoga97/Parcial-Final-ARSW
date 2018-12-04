@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 public class UnitConverterServiceStub implements  UnitConverterService{
 
     @Override
-    public int convertCelciusToFahrenheit(int c) throws UnitConverterServiceException {
-        int convertedValue;
+    public float convertCelciusToFahrenheit(float c) throws UnitConverterServiceException {
+        float convertedValue;
         try{
             convertedValue=TemperatureUnit.CelciusToFahrenheit(c);
         }catch (Exception e){
@@ -19,10 +19,11 @@ public class UnitConverterServiceStub implements  UnitConverterService{
     }
 
     @Override
-    public int convertFahrenheitToCelsius(int f) throws UnitConverterServiceException {
-        int convertedValue;
+    public float convertFahrenheitToCelsius(float f) throws UnitConverterServiceException {
+        float convertedValue;
         try{
             convertedValue=TemperatureUnit.FahrenheitToCelsius(f);
+
         }catch (Exception e){
             throw new UnitConverterServiceException("An error has ocurred while converting the value: "+e.getMessage());
         }

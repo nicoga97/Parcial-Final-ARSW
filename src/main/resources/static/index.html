@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Unit Converter</title>
 </head>
 <body>
+<h1>Here you can convert Celcius to Fahrenheit and viceversa</h1>
 
+<h3>Write the Fahrenheit degrees to convert to Celsius degrees</h3>
+<input type="number" name="f" onchange="fahrenheit=this.value"><br>
+<p id="c"></p>
+
+<button onclick="convertFahrenheitToCelsius()">Convert</button>
+<h3>Write the Celsius degrees to convert to Fahrenheit degrees</h3>
+<input type="number"  onchange="celcius=this.value"/><br>
+<p id="f"></p>
+<button onclick="convertCelsiusToFahrenheit()">Convert</button>
+<p>This is a paragraph</p>
+<p>This is a paragraph</p>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/UnitConverterController.js"></script>
 </body>
 </html>

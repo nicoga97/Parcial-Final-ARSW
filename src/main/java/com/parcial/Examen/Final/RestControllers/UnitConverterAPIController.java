@@ -20,7 +20,7 @@ public class UnitConverterAPIController {
 
     @CrossOrigin(origins = "*")
     @RequestMapping(value = "/FahrenheitToCelsius/{f}", method = RequestMethod.GET)
-    public ResponseEntity<?> manejadorConverterFahrenheitToCelsius(@PathVariable("f") int f) {
+    public ResponseEntity<?> manejadorConverterFahrenheitToCelsius(@PathVariable("f") float f) {
         try {
 
             return new ResponseEntity<>(service.convertFahrenheitToCelsius(f), HttpStatus.ACCEPTED);
@@ -32,7 +32,7 @@ public class UnitConverterAPIController {
 
     @CrossOrigin(origins = "*")
     @RequestMapping(value = "/CelciusToFahrenheit/{c}", method = RequestMethod.GET)
-    public ResponseEntity<?> manejadorConverterCelciusToFahrenheit(@PathVariable("c") int c) {
+    public ResponseEntity<?> manejadorConverterCelciusToFahrenheit(@PathVariable("c") float c) {
         try {
 
             return new ResponseEntity<>(service.convertCelciusToFahrenheit(c), HttpStatus.ACCEPTED);

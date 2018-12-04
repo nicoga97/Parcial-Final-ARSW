@@ -2,8 +2,8 @@ package com.parcial.Examen.Final.Services;
 
 public interface UnitConverterService {
 
-     int convertCelciusToFahrenheit(int c) throws UnitConverterServiceException;
+     float convertCelciusToFahrenheit(float c) throws UnitConverterServiceException;
 
-    int convertFahrenheitToCelsius(int f) throws UnitConverterServiceException;
+    float convertFahrenheitToCelsius(float f) throws UnitConverterServiceException;
 
 }

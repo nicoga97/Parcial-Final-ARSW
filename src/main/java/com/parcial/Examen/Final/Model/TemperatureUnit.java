@@ -2,11 +2,12 @@ package com.parcial.Examen.Final.Model;
 
 public class TemperatureUnit {
 
-    public static int  FahrenheitToCelsius(int f){
-        return (f-32)*(5/9);
+    public static float  FahrenheitToCelsius(float f) {
+
+        return (f-32)*((float)5/(float)9);
     }
 
-    public static int CelciusToFahrenheit(int c){
-        return (c*(9/5))+32;
+    public static float CelciusToFahrenheit(float c){
+        return (c*((float)9/(float)5))+(float)32;
     }
 }
