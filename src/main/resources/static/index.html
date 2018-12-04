@@ -16,8 +16,21 @@
 <input type="number"  onchange="celcius=this.value"/><br>
 <p id="f"></p>
 <button onclick="convertCelsiusToFahrenheit()">Convert</button>
-<p>This is a paragraph</p>
-<p>This is a paragraph</p>
+<p>Para utilizar esta API simplemente se hace una peticion GET segun lo que se desee realizar de la siguente manera:</p>
+<p>http://ip del servidor/CelciusToFahrenheit/"celciusToConvert" </p>
+<p>http://p del servidor/FahrenheitToCelsius/"fahrenheitToConvert"</p>
+<p>Reemplazando los valores de la ip del servidor y de lo grados a convertir</p>
+<p>Un ejemplo de un consumo de este Api via js seria:</p>
+<p>function convertFahrenheitToCelsius(){
+axios.get( "http://localhost:8080/FahrenheitToCelsius/"+fahrenheit)<br>
+.then(function (response) {<br>
+console.log(respomse.data)<br>
+})<br>
+.catch(function (error) {<br>
+})<br>
+    }</p>
+
+<p>Para realizar esta peticion se debe importar axios </p>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/UnitConverterController.js"></script>
 </body>
